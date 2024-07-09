@@ -6,5 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "Tags: $TAGS"
-          TAG: ${{ inputs.tags }}
+          echo "Hello World"

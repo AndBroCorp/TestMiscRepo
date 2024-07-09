@@ -1,0 +1,10 @@
+name: Test Testing
+on: [pull_request]
+
+jobs:
+  TestTesting:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hello World"
+          exit 0
