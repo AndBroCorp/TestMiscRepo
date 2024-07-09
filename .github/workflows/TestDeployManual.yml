@@ -1,0 +1,16 @@
+name: Test Deploy Manual and Tag Select
+on:
+    push:
+    workflow_dispatch:
+        tags:
+          description: 'Tag'
+          required: false
+          type: boolean
+  
+  jobs:
+    TestDeployManual:
+      runs-on: ubuntu-latest
+      steps:
+        - run: |
+            echo "Tags: $TAGS"
+            TAG: ${{ inputs.tags }}
